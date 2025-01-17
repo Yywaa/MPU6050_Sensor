@@ -83,6 +83,8 @@ void mpu6050_read_gyro(short *pBuffer);
 void mpu6050_read_temp(short *pBuffer);
 int fd;
 
+#define PRINT_RAW_DATA			1
+#define NON_RAW_DATA			1
 
 
 #endif /* MPU6050_DEV_INC_MPU6050_H_ */

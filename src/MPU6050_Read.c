@@ -47,7 +47,7 @@ int main()
 		/*Convert temp raw value to values in degrees */
 		Temp = (temp[0])/340+36.53;
 
-	#if 0
+	#if PRINT_RAW_DATA
 		/* print just the raw values read */
 	   printf("Acc(raw)=> X:%d Y:%d Z:%d gyro(raw)=> X:%d Y:%d Z:%d; Temp(raw): %d \n",
 				   acc_value[0],acc_value[1],acc_value[2],gyro_value[0],gyro_value[1],gyro_value[2],temp[0]);
@@ -57,7 +57,7 @@ int main()
 			   accx,accy,accz,gyrox,gyroy,gyroz,Temp);
 	#endif
 
-	#if 1
+	#if NON_RAW_DATA
 	   printf("%0.2f	%0.2f	%0.2f,  %0.2f\n",accx,accy,accz,Temp);
 	#endif
 
